@@ -34,8 +34,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -69,8 +68,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -202,8 +200,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -234,8 +231,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -334,6 +330,7 @@ body {
     max-width: 50%; } }
 /* ====== NAVBAR ====== */
 nav {
+  background-color: gold;
   position: fixed;
   top: 0;
   left: 0;
@@ -343,18 +340,14 @@ nav {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    justify-content: space-between; }
     nav ul li {
       display: inline; }
       nav ul li a {
         display: inline-block;
         padding: 1em;
-        color: white;
+        color: #272727;
         text-decoration: none; }
       nav ul li :hover {
         background-color: #fff09d; }
@@ -362,15 +355,9 @@ nav {
 /* ====== HEADER ====== */
 header {
   height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
   position: relative; }
@@ -412,9 +399,7 @@ main p {
   font-size: 1.2em;
   font-family: 'Courier New', Courier, monospace;
   text-align: justify;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto; }
+  hyphens: auto; }
 
 @media only screen and (min-width: 960px) {
   main section {
@@ -425,3 +410,5 @@ footer {
   color: white;
   padding: 4em 1em;
   text-align: center; }
+
+/*# sourceMappingURL=master.css.map */
